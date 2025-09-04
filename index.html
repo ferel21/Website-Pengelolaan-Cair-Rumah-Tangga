@@ -1,0 +1,2434 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kelola Limbah Cair, Selamatkan Bumi - Poltekkes Kemenkes Makassar</title>
+    <meta name="description" content="Panduan komprehensif pengelolaan limbah cair rumah tangga untuk kelestarian lingkungan. Dibuat oleh Kelompok 6 untuk edukasi masyarakat.">
+    <meta name="keywords" content="limbah cair, rumah tangga, lingkungan, pengelolaan limbah, air bersih, sustainable living">
+    <meta name="author" content="Poltekkes Kemenkes Makassar">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Kelola Limbah Cair, Selamatkan Bumi">
+    <meta property="og:description" content="Panduan komprehensif pengelolaan limbah cair rumah tangga">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1611273426858-450d8e3c9fce">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌊</text></svg>">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <style>
+        /* CSS Reset and Base Styles */
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            /* Color System */
+            --primary-50: #ecfdf5;
+            --primary-100: #d1fae5;
+            --primary-200: #a7f3d0;
+            --primary-300: #6ee7b7;
+            --primary-400: #34d399;
+            --primary-500: #10b981;
+            --primary-600: #059669;
+            --primary-700: #047857;
+            --primary-800: #065f46;
+            --primary-900: #064e3b;
+            
+            --secondary-50: #f8fafc;
+            --secondary-100: #f1f5f9;
+            --secondary-200: #e2e8f0;
+            --secondary-300: #cbd5e1;
+            --secondary-400: #94a3b8;
+            --secondary-500: #64748b;
+            --secondary-600: #475569;
+            --secondary-700: #334155;
+            --secondary-800: #1e293b;
+            --secondary-900: #0f172a;
+            
+            --accent-blue: #3b82f6;
+            --accent-indigo: #6366f1;
+            --accent-purple: #8b5cf6;
+            --accent-pink: #ec4899;
+            --accent-orange: #f97316;
+            --accent-yellow: #eab308;
+            
+            --success: #22c55e;
+            --warning: #f59e0b;
+            --error: #ef4444;
+            --info: #06b6d4;
+            
+            /* Semantic Colors */
+            --background: #ffffff;
+            --surface: #f8fafc;
+            --surface-variant: #f1f5f9;
+            --outline: #e2e8f0;
+            --outline-variant: #cbd5e1;
+            
+            --on-background: #0f172a;
+            --on-surface: #1e293b;
+            --on-surface-variant: #475569;
+            --on-primary: #ffffff;
+            --on-secondary: #f8fafc;
+            
+            /* Typography */
+            --font-family-primary: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            --font-family-secondary: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
+            
+            --font-size-xs: 0.75rem;
+            --font-size-sm: 0.875rem;
+            --font-size-base: 1rem;
+            --font-size-lg: 1.125rem;
+            --font-size-xl: 1.25rem;
+            --font-size-2xl: 1.5rem;
+            --font-size-3xl: 1.875rem;
+            --font-size-4xl: 2.25rem;
+            --font-size-5xl: 3rem;
+            --font-size-6xl: 3.75rem;
+            
+            --font-weight-light: 300;
+            --font-weight-normal: 400;
+            --font-weight-medium: 500;
+            --font-weight-semibold: 600;
+            --font-weight-bold: 700;
+            --font-weight-extrabold: 800;
+            --font-weight-black: 900;
+            
+            /* Spacing */
+            --spacing-1: 0.25rem;
+            --spacing-2: 0.5rem;
+            --spacing-3: 0.75rem;
+            --spacing-4: 1rem;
+            --spacing-5: 1.25rem;
+            --spacing-6: 1.5rem;
+            --spacing-8: 2rem;
+            --spacing-10: 2.5rem;
+            --spacing-12: 3rem;
+            --spacing-16: 4rem;
+            --spacing-20: 5rem;
+            --spacing-24: 6rem;
+            --spacing-32: 8rem;
+            
+            /* Border Radius */
+            --radius-sm: 0.25rem;
+            --radius-base: 0.375rem;
+            --radius-md: 0.5rem;
+            --radius-lg: 0.75rem;
+            --radius-xl: 1rem;
+            --radius-2xl: 1.5rem;
+            --radius-full: 9999px;
+            
+            /* Shadows */
+            --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+            --shadow-base: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+            
+            /* Transitions */
+            --transition-fast: 150ms ease-in-out;
+            --transition-base: 200ms ease-in-out;
+            --transition-slow: 300ms ease-in-out;
+            --transition-slower: 500ms ease-in-out;
+            
+            /* Z-Index Scale */
+            --z-dropdown: 1000;
+            --z-sticky: 1020;
+            --z-fixed: 1030;
+            --z-modal-backdrop: 1040;
+            --z-modal: 1050;
+            --z-popover: 1060;
+            --z-tooltip: 1070;
+            --z-toast: 2000;
+        }
+
+        /* Base Typography */
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+
+        body {
+            font-family: var(--font-family-primary);
+            font-size: var(--font-size-base);
+            font-weight: var(--font-weight-normal);
+            line-height: 1.6;
+            color: var(--on-background);
+            background-color: var(--background);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            overflow-x: hidden;
+        }
+
+        /* Typography Utilities */
+        .font-primary { font-family: var(--font-family-primary); }
+        .font-secondary { font-family: var(--font-family-secondary); }
+
+        .text-xs { font-size: var(--font-size-xs); }
+        .text-sm { font-size: var(--font-size-sm); }
+        .text-base { font-size: var(--font-size-base); }
+        .text-lg { font-size: var(--font-size-lg); }
+        .text-xl { font-size: var(--font-size-xl); }
+        .text-2xl { font-size: var(--font-size-2xl); }
+        .text-3xl { font-size: var(--font-size-3xl); }
+        .text-4xl { font-size: var(--font-size-4xl); }
+        .text-5xl { font-size: var(--font-size-5xl); }
+        .text-6xl { font-size: var(--font-size-6xl); }
+
+        .font-light { font-weight: var(--font-weight-light); }
+        .font-normal { font-weight: var(--font-weight-normal); }
+        .font-medium { font-weight: var(--font-weight-medium); }
+        .font-semibold { font-weight: var(--font-weight-semibold); }
+        .font-bold { font-weight: var(--font-weight-bold); }
+        .font-extrabold { font-weight: var(--font-weight-extrabold); }
+        .font-black { font-weight: var(--font-weight-black); }
+
+        .text-center { text-align: center; }
+        .text-left { text-align: left; }
+        .text-right { text-align: right; }
+
+        /* Color Utilities */
+        .text-primary { color: var(--primary-600); }
+        .text-secondary { color: var(--secondary-600); }
+        .text-muted { color: var(--secondary-500); }
+        .text-success { color: var(--success); }
+        .text-warning { color: var(--warning); }
+        .text-error { color: var(--error); }
+        .text-info { color: var(--info); }
+        .text-white { color: #ffffff; }
+
+        .bg-primary { background-color: var(--primary-600); }
+        .bg-primary-light { background-color: var(--primary-100); }
+        .bg-surface { background-color: var(--surface); }
+        .bg-surface-variant { background-color: var(--surface-variant); }
+        .bg-white { background-color: #ffffff; }
+
+        /* Layout Utilities */
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 var(--spacing-4);
+        }
+
+        .container-wide {
+            width: 100%;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 var(--spacing-4);
+        }
+
+        .section {
+            padding: var(--spacing-20) 0;
+        }
+
+        .section-sm {
+            padding: var(--spacing-16) 0;
+        }
+
+        .section-lg {
+            padding: var(--spacing-24) 0;
+        }
+
+        /* Grid System */
+        .grid {
+            display: grid;
+            gap: var(--spacing-6);
+        }
+
+        .grid-1 { grid-template-columns: 1fr; }
+        .grid-2 { grid-template-columns: repeat(2, 1fr); }
+        .grid-3 { grid-template-columns: repeat(3, 1fr); }
+        .grid-4 { grid-template-columns: repeat(4, 1fr); }
+        .grid-auto { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+
+        .flex {
+            display: flex;
+        }
+
+        .flex-col {
+            flex-direction: column;
+        }
+
+        .items-center {
+            align-items: center;
+        }
+
+        .justify-center {
+            justify-content: center;
+        }
+
+        .justify-between {
+            justify-content: space-between;
+        }
+
+        .gap-2 { gap: var(--spacing-2); }
+        .gap-4 { gap: var(--spacing-4); }
+        .gap-6 { gap: var(--spacing-6); }
+        .gap-8 { gap: var(--spacing-8); }
+
+        /* Spacing Utilities */
+        .p-2 { padding: var(--spacing-2); }
+        .p-4 { padding: var(--spacing-4); }
+        .p-6 { padding: var(--spacing-6); }
+        .p-8 { padding: var(--spacing-8); }
+
+        .px-4 { padding-left: var(--spacing-4); padding-right: var(--spacing-4); }
+        .py-4 { padding-top: var(--spacing-4); padding-bottom: var(--spacing-4); }
+
+        .m-2 { margin: var(--spacing-2); }
+        .m-4 { margin: var(--spacing-4); }
+        .m-6 { margin: var(--spacing-6); }
+        .m-8 { margin: var(--spacing-8); }
+
+        .mb-2 { margin-bottom: var(--spacing-2); }
+        .mb-4 { margin-bottom: var(--spacing-4); }
+        .mb-6 { margin-bottom: var(--spacing-6); }
+        .mb-8 { margin-bottom: var(--spacing-8); }
+        .mb-12 { margin-bottom: var(--spacing-12); }
+        .mb-16 { margin-bottom: var(--spacing-16); }
+
+        /* Border Utilities */
+        .rounded { border-radius: var(--radius-base); }
+        .rounded-md { border-radius: var(--radius-md); }
+        .rounded-lg { border-radius: var(--radius-lg); }
+        .rounded-xl { border-radius: var(--radius-xl); }
+        .rounded-2xl { border-radius: var(--radius-2xl); }
+        .rounded-full { border-radius: var(--radius-full); }
+
+        .border { border: 1px solid var(--outline); }
+        .border-t { border-top: 1px solid var(--outline); }
+
+        /* Shadow Utilities */
+        .shadow-sm { box-shadow: var(--shadow-sm); }
+        .shadow { box-shadow: var(--shadow-base); }
+        .shadow-md { box-shadow: var(--shadow-md); }
+        .shadow-lg { box-shadow: var(--shadow-lg); }
+        .shadow-xl { box-shadow: var(--shadow-xl); }
+        .shadow-2xl { box-shadow: var(--shadow-2xl); }
+
+        /* Transition Utilities */
+        .transition { transition: all var(--transition-base); }
+        .transition-fast { transition: all var(--transition-fast); }
+        .transition-slow { transition: all var(--transition-slow); }
+
+        /* Position Utilities */
+        .relative { position: relative; }
+        .absolute { position: absolute; }
+        .fixed { position: fixed; }
+        .sticky { position: sticky; }
+
+        .inset-0 { top: 0; right: 0; bottom: 0; left: 0; }
+        .top-0 { top: 0; }
+        .left-0 { left: 0; }
+        .right-0 { right: 0; }
+        .bottom-0 { bottom: 0; }
+
+        /* Visibility Utilities */
+        .hidden { display: none; }
+        .block { display: block; }
+        .inline-block { display: inline-block; }
+
+        .opacity-0 { opacity: 0; }
+        .opacity-50 { opacity: 0.5; }
+        .opacity-75 { opacity: 0.75; }
+        .opacity-100 { opacity: 1; }
+
+        /* Interactive States */
+        .hover\:scale-105:hover {
+            transform: scale(1.05);
+        }
+
+        .hover\:shadow-lg:hover {
+            box-shadow: var(--shadow-lg);
+        }
+
+        .hover\:bg-primary-700:hover {
+            background-color: var(--primary-700);
+        }
+
+        .hover\:text-primary:hover {
+            color: var(--primary-600);
+        }
+
+        /* Navigation Styles */
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: var(--z-sticky);
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--outline);
+            transition: all var(--transition-base);
+        }
+
+        .navbar.scrolled {
+            background: rgba(255, 255, 255, 0.98);
+            box-shadow: var(--shadow-md);
+        }
+
+        .nav-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: var(--spacing-4) 0;
+        }
+
+        .nav-logo {
+            font-family: var(--font-family-secondary);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-3);
+        }
+
+        .nav-logo-icon {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, #10b981, #3b82f6);
+            border-radius: var(--radius-lg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: var(--font-size-2xl);
+            font-weight: var(--font-weight-bold);
+            box-shadow: var(--shadow-md);
+        }
+
+        .nav-logo-content {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .nav-logo-title {
+            font-size: var(--font-size-lg);
+            font-weight: var(--font-weight-bold);
+            color: var(--primary-600);
+            line-height: 1.2;
+        }
+
+        .nav-logo-subtitle {
+            font-size: var(--font-size-sm);
+            color: var(--secondary-500);
+            font-weight: var(--font-weight-medium);
+            line-height: 1.2;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: var(--spacing-8);
+            align-items: center;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: var(--on-surface-variant);
+            font-weight: var(--font-weight-medium);
+            font-size: var(--font-size-base);
+            position: relative;
+            padding: var(--spacing-2) 0;
+            transition: all var(--transition-base);
+        }
+
+        .nav-link:hover,
+        .nav-link.active {
+            color: var(--primary-600);
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--primary-600);
+            transition: width var(--transition-base);
+        }
+
+        .nav-link:hover::after,
+        .nav-link.active::after {
+            width: 100%;
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: var(--font-size-2xl);
+            color: var(--on-surface);
+            cursor: pointer;
+            padding: var(--spacing-2);
+            border-radius: var(--radius-md);
+            transition: all var(--transition-base);
+        }
+
+        .mobile-menu-btn:hover {
+            background: var(--surface);
+        }
+
+        .mobile-menu {
+            display: none;
+            background: white;
+            border-top: 1px solid var(--outline);
+            padding: var(--spacing-4);
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .mobile-menu.active {
+            display: block;
+            animation: slideDown 0.3s ease-out;
+        }
+
+        .mobile-nav-link {
+            display: block;
+            padding: var(--spacing-3) 0;
+            text-decoration: none;
+            color: var(--on-surface-variant);
+            font-weight: var(--font-weight-medium);
+            border-bottom: 1px solid var(--outline-variant);
+            transition: all var(--transition-base);
+        }
+
+        .mobile-nav-link:hover {
+            color: var(--primary-600);
+            padding-left: var(--spacing-4);
+        }
+
+        .mobile-nav-link:last-child {
+            border-bottom: none;
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, rgba(16, 185, 129, 0.8), rgba(59, 130, 246, 0.8)),
+                        url('https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&h=1080') center/cover;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(45deg, 
+                rgba(16, 185, 129, 0.1) 0%, 
+                rgba(59, 130, 246, 0.1) 50%, 
+                rgba(16, 185, 129, 0.1) 100%);
+            animation: gradientShift 6s ease-in-out infinite alternate;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            color: white;
+            max-width: 800px;
+            padding: 0 var(--spacing-4);
+        }
+
+        .hero-title {
+            font-family: var(--font-family-secondary);
+            font-size: var(--font-size-5xl);
+            font-weight: var(--font-weight-black);
+            margin-bottom: var(--spacing-6);
+            text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .hero-subtitle {
+            font-size: var(--font-size-xl);
+            font-weight: var(--font-weight-normal);
+            margin-bottom: var(--spacing-8);
+            opacity: 0.95;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+            animation: fadeInUp 1s ease-out 0.2s both;
+        }
+
+        .hero-cta {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--spacing-2);
+            background: var(--primary-600);
+            color: white;
+            padding: var(--spacing-4) var(--spacing-8);
+            border-radius: var(--radius-full);
+            text-decoration: none;
+            font-weight: var(--font-weight-semibold);
+            font-size: var(--font-size-lg);
+            box-shadow: var(--shadow-lg);
+            transition: all var(--transition-base);
+            animation: fadeInUp 1s ease-out 0.4s both;
+        }
+
+        .hero-cta:hover {
+            background: var(--primary-700);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .hero-particles {
+            position: absolute;
+            inset: 0;
+            overflow: hidden;
+            pointer-events: none;
+        }
+
+        .particle {
+            position: absolute;
+            width: 4px;
+            height: 4px;
+            background: rgba(255, 255, 255, 0.6);
+            border-radius: 50%;
+            animation: float 6s infinite linear;
+        }
+
+        /* Section Title Styles */
+        .section-header {
+            text-align: center;
+            margin-bottom: var(--spacing-16);
+        }
+
+        .section-title {
+            font-family: var(--font-family-secondary);
+            font-size: var(--font-size-4xl);
+            font-weight: var(--font-weight-bold);
+            color: var(--on-background);
+            margin-bottom: var(--spacing-4);
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -var(--spacing-2);
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary-400), var(--accent-blue));
+            border-radius: var(--radius-full);
+        }
+
+        .section-subtitle {
+            font-size: var(--font-size-lg);
+            color: var(--on-surface-variant);
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.7;
+        }
+
+        /* Card Components */
+        .card {
+            background: white;
+            border-radius: var(--radius-xl);
+            overflow: hidden;
+            box-shadow: var(--shadow-base);
+            transition: all var(--transition-base);
+            position: relative;
+            border: 1px solid var(--outline-variant);
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .card-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            transition: transform var(--transition-slow);
+        }
+
+        .card:hover .card-image {
+            transform: scale(1.05);
+        }
+
+        .card-content {
+            padding: var(--spacing-6);
+        }
+
+        .card-title {
+            font-family: var(--font-family-secondary);
+            font-size: var(--font-size-xl);
+            font-weight: var(--font-weight-semibold);
+            color: var(--on-surface);
+            margin-bottom: var(--spacing-3);
+        }
+
+        .card-description {
+            color: var(--on-surface-variant);
+            line-height: 1.6;
+            margin-bottom: var(--spacing-4);
+        }
+
+        .card-link {
+            color: var(--primary-600);
+            text-decoration: none;
+            font-weight: var(--font-weight-medium);
+            display: inline-flex;
+            align-items: center;
+            gap: var(--spacing-1);
+            transition: all var(--transition-base);
+        }
+
+        .card-link:hover {
+            color: var(--primary-700);
+            gap: var(--spacing-2);
+        }
+
+        /* Solutions Section */
+        .solutions-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--spacing-12);
+            align-items: center;
+            margin-top: var(--spacing-16);
+        }
+
+        .solutions-content h3 {
+            font-family: var(--font-family-secondary);
+            font-size: var(--font-size-3xl);
+            font-weight: var(--font-weight-bold);
+            color: var(--on-surface);
+            margin-bottom: var(--spacing-6);
+        }
+
+        .solutions-list {
+            list-style: none;
+            space: var(--spacing-4);
+        }
+
+        .solutions-item {
+            display: flex;
+            align-items: flex-start;
+            gap: var(--spacing-4);
+            margin-bottom: var(--spacing-4);
+            padding: var(--spacing-3);
+            border-radius: var(--radius-lg);
+            transition: all var(--transition-base);
+        }
+
+        .solutions-item:hover {
+            background: var(--surface);
+            transform: translateX(4px);
+        }
+
+        .solutions-icon {
+            width: 32px;
+            height: 32px;
+            background: var(--primary-600);
+            border-radius: var(--radius-full);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: var(--font-size-sm);
+            font-weight: var(--font-weight-bold);
+            flex-shrink: 0;
+            box-shadow: var(--shadow-md);
+        }
+
+        .solutions-text {
+            color: var(--on-surface-variant);
+            line-height: 1.6;
+        }
+
+        .solutions-image {
+            border-radius: var(--radius-xl);
+            box-shadow: var(--shadow-lg);
+            overflow: hidden;
+        }
+
+        .solutions-image img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            transition: transform var(--transition-slow);
+        }
+
+        .solutions-image:hover img {
+            transform: scale(1.05);
+        }
+
+        /* Infographic Section */
+        .infographic-container {
+            background: linear-gradient(135deg, var(--primary-500), var(--accent-blue));
+            border-radius: var(--radius-2xl);
+            padding: var(--spacing-12);
+            color: white;
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .infographic-container::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+            animation: rotate 20s linear infinite;
+        }
+
+        .infographic-title {
+            font-family: var(--font-family-secondary);
+            font-size: var(--font-size-3xl);
+            font-weight: var(--font-weight-bold);
+            margin-bottom: var(--spacing-8);
+            position: relative;
+            z-index: 2;
+        }
+
+        .process-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: var(--spacing-8);
+            position: relative;
+            z-index: 2;
+        }
+
+        .process-step {
+            text-align: center;
+            padding: var(--spacing-4);
+            border-radius: var(--radius-lg);
+            backdrop-filter: blur(10px);
+            background: rgba(255, 255, 255, 0.1);
+            transition: all var(--transition-base);
+        }
+
+        .process-step:hover {
+            transform: translateY(-4px);
+            background: rgba(255, 255, 255, 0.15);
+        }
+
+        .process-icon {
+            width: 80px;
+            height: 80px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: var(--radius-full);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto var(--spacing-4);
+            font-size: var(--font-size-3xl);
+            backdrop-filter: blur(10px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .process-title {
+            font-size: var(--font-size-xl);
+            font-weight: var(--font-weight-semibold);
+            margin-bottom: var(--spacing-2);
+        }
+
+        .process-description {
+            opacity: 0.9;
+            font-size: var(--font-size-base);
+        }
+
+        /* Gallery Styles */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--spacing-4);
+        }
+
+        .gallery-item {
+            position: relative;
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            aspect-ratio: 4/3;
+            cursor: pointer;
+            transition: all var(--transition-base);
+            box-shadow: var(--shadow-base);
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.02);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform var(--transition-slow);
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .gallery-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+            opacity: 0;
+            display: flex;
+            align-items: flex-end;
+            padding: var(--spacing-4);
+            color: white;
+            transition: all var(--transition-base);
+        }
+
+        .gallery-item:hover .gallery-overlay {
+            opacity: 1;
+        }
+
+        /* About Section */
+        .about-container {
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .about-description {
+            font-size: var(--font-size-lg);
+            color: var(--on-surface-variant);
+            line-height: 1.8;
+            margin-bottom: var(--spacing-8);
+        }
+
+        .team-box {
+            background: linear-gradient(135deg, var(--primary-50), var(--accent-blue) 5%);
+            border-radius: var(--radius-xl);
+            padding: var(--spacing-8);
+            border: 1px solid var(--primary-200);
+        }
+
+        .team-title {
+            font-family: var(--font-family-secondary);
+            font-size: var(--font-size-2xl);
+            font-weight: var(--font-weight-bold);
+            color: var(--primary-800);
+            margin-bottom: var(--spacing-6);
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: var(--spacing-4);
+        }
+
+        .team-member {
+            background: white;
+            padding: var(--spacing-4);
+            border-radius: var(--radius-lg);
+            color: var(--on-surface);
+            font-weight: var(--font-weight-medium);
+            box-shadow: var(--shadow-sm);
+            transition: all var(--transition-base);
+        }
+
+        .team-member:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+
+        /* Contact Form */
+        .contact-container {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .contact-form {
+            background: white;
+            padding: var(--spacing-8);
+            border-radius: var(--radius-xl);
+            box-shadow: var(--shadow-lg);
+            border: 1px solid var(--outline-variant);
+        }
+
+        .form-group {
+            margin-bottom: var(--spacing-6);
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--spacing-4);
+        }
+
+        .form-label {
+            display: block;
+            font-weight: var(--font-weight-medium);
+            color: var(--on-surface);
+            margin-bottom: var(--spacing-2);
+            font-size: var(--font-size-sm);
+        }
+
+        .form-input,
+        .form-textarea {
+            width: 100%;
+            padding: var(--spacing-3) var(--spacing-4);
+            border: 1px solid var(--outline);
+            border-radius: var(--radius-md);
+            font-size: var(--font-size-base);
+            font-family: inherit;
+            transition: all var(--transition-base);
+            background: var(--surface);
+        }
+
+        .form-input:focus,
+        .form-textarea:focus {
+            outline: none;
+            border-color: var(--primary-500);
+            box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.1);
+            background: white;
+        }
+
+        .form-textarea {
+            resize: vertical;
+            min-height: 120px;
+            line-height: 1.6;
+        }
+
+        .submit-btn {
+            background: var(--primary-600);
+            color: white;
+            padding: var(--spacing-4) var(--spacing-8);
+            border: none;
+            border-radius: var(--radius-full);
+            font-size: var(--font-size-base);
+            font-weight: var(--font-weight-semibold);
+            cursor: pointer;
+            transition: all var(--transition-base);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: var(--spacing-2);
+            margin: 0 auto;
+            min-width: 160px;
+            box-shadow: var(--shadow-md);
+        }
+
+        .submit-btn:hover:not(:disabled) {
+            background: var(--primary-700);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .submit-btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--secondary-900);
+            color: var(--secondary-100);
+            text-align: center;
+            padding: var(--spacing-12) 0;
+        }
+
+        .footer-content {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .footer-title {
+            font-family: var(--font-family-secondary);
+            font-size: var(--font-size-xl);
+            font-weight: var(--font-weight-semibold);
+            margin-bottom: var(--spacing-2);
+        }
+
+        .footer-copyright {
+            opacity: 0.8;
+            font-size: var(--font-size-sm);
+        }
+
+        /* Toast Notification */
+        .toast {
+            position: fixed;
+            top: var(--spacing-6);
+            right: var(--spacing-6);
+            background: var(--primary-600);
+            color: white;
+            padding: var(--spacing-4) var(--spacing-6);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-xl);
+            transform: translateX(calc(100% + var(--spacing-6)));
+            transition: transform var(--transition-base);
+            z-index: var(--z-toast);
+            max-width: 400px;
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-3);
+        }
+
+        .toast.show {
+            transform: translateX(0);
+        }
+
+        .toast.error {
+            background: var(--error);
+        }
+
+        .toast.success {
+            background: var(--success);
+        }
+
+        .toast-icon {
+            font-size: var(--font-size-lg);
+        }
+
+        .toast-message {
+            font-weight: var(--font-weight-medium);
+        }
+
+        /* Loading Spinner */
+        .spinner {
+            width: 20px;
+            height: 20px;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            border-top: 2px solid white;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        /* Modal */
+        .modal-backdrop {
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.8);
+            z-index: var(--z-modal-backdrop);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: var(--spacing-4);
+            opacity: 0;
+            visibility: hidden;
+            transition: all var(--transition-base);
+        }
+
+        .modal-backdrop.show {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .modal {
+            background: white;
+            border-radius: var(--radius-xl);
+            max-width: 90vw;
+            max-height: 90vh;
+            overflow: hidden;
+            transform: scale(0.9);
+            transition: transform var(--transition-base);
+        }
+
+        .modal-backdrop.show .modal {
+            transform: scale(1);
+        }
+
+        .modal img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 100% 50%; }
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(100vh) rotate(0deg);
+                opacity: 0;
+            }
+            10% {
+                opacity: 1;
+            }
+            90% {
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-100px) rotate(360deg);
+                opacity: 0;
+            }
+        }
+
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .container {
+                padding: 0 var(--spacing-6);
+            }
+            
+            .solutions-container {
+                grid-template-columns: 1fr;
+                gap: var(--spacing-8);
+            }
+            
+            .solutions-image {
+                order: -1;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .hero-title {
+                font-size: var(--font-size-3xl);
+            }
+
+            .hero-subtitle {
+                font-size: var(--font-size-base);
+            }
+
+            .section-title {
+                font-size: var(--font-size-2xl);
+            }
+
+            .section {
+                padding: var(--spacing-16) 0;
+            }
+
+            .grid-3,
+            .grid-4 {
+                grid-template-columns: 1fr;
+            }
+
+            .grid-2 {
+                grid-template-columns: 1fr;
+            }
+
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+
+            .process-steps {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .gallery-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .team-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .infographic-container {
+                padding: var(--spacing-6);
+            }
+
+            .card-content {
+                padding: var(--spacing-4);
+            }
+
+            .contact-form {
+                padding: var(--spacing-6);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-title {
+                font-size: var(--font-size-2xl);
+            }
+
+            .process-steps {
+                grid-template-columns: 1fr;
+            }
+
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .container {
+                padding: 0 var(--spacing-4);
+            }
+        }
+
+        /* Print Styles */
+        @media print {
+            .navbar,
+            .mobile-menu,
+            .hero-cta,
+            .contact-form,
+            .toast {
+                display: none;
+            }
+
+            .hero {
+                height: auto;
+                padding: var(--spacing-8) 0;
+            }
+
+            body {
+                font-size: 12pt;
+                line-height: 1.4;
+            }
+
+            .section {
+                padding: var(--spacing-4) 0;
+                break-inside: avoid;
+            }
+
+            .card {
+                break-inside: avoid;
+                box-shadow: none;
+                border: 1px solid #ccc;
+            }
+        }
+
+        /* Accessibility Improvements */
+        @media (prefers-reduced-motion: reduce) {
+            *,
+            *::before,
+            *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+
+        /* Focus Styles */
+        .nav-link:focus,
+        .mobile-nav-link:focus,
+        .hero-cta:focus,
+        .card-link:focus,
+        .form-input:focus,
+        .form-textarea:focus,
+        .submit-btn:focus {
+            outline: 2px solid var(--primary-500);
+            outline-offset: 2px;
+        }
+
+        /* YouTube Video Section */
+        .video-section {
+            background: linear-gradient(135deg, var(--primary-50), var(--accent-blue) / 0.05);
+            border-radius: var(--radius-2xl);
+            padding: var(--spacing-12);
+            margin-top: var(--spacing-16);
+            text-align: center;
+            border: 1px solid var(--primary-200);
+        }
+
+        .video-title {
+            font-family: var(--font-family-secondary);
+            font-size: var(--font-size-3xl);
+            font-weight: var(--font-weight-bold);
+            color: var(--primary-800);
+            margin-bottom: var(--spacing-4);
+        }
+
+        .video-description {
+            font-size: var(--font-size-lg);
+            color: var(--secondary-600);
+            margin-bottom: var(--spacing-8);
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.7;
+        }
+
+        .video-container {
+            position: relative;
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            border-radius: var(--radius-xl);
+            overflow: hidden;
+            box-shadow: var(--shadow-2xl);
+            background: #000;
+        }
+
+        .video-container iframe {
+            width: 100%;
+            height: 450px;
+            border: none;
+            display: block;
+        }
+
+        .video-link {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--spacing-2);
+            margin-top: var(--spacing-6);
+            padding: var(--spacing-3) var(--spacing-6);
+            background: var(--primary-600);
+            color: white;
+            text-decoration: none;
+            border-radius: var(--radius-full);
+            font-weight: var(--font-weight-semibold);
+            font-size: var(--font-size-base);
+            transition: all var(--transition-base);
+            box-shadow: var(--shadow-md);
+        }
+
+        .video-link:hover {
+            background: var(--primary-700);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        @media (max-width: 768px) {
+            .nav-logo-title {
+                font-size: var(--font-size-base);
+            }
+            
+            .nav-logo-subtitle {
+                font-size: var(--font-size-xs);
+            }
+            
+            .nav-logo-icon {
+                width: 40px;
+                height: 40px;
+                font-size: var(--font-size-lg);
+            }
+            
+            .video-container iframe {
+                height: 250px;
+            }
+            
+            .video-section {
+                padding: var(--spacing-6);
+            }
+            
+            .video-title {
+                font-size: var(--font-size-2xl);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .nav-logo-content {
+                display: none;
+            }
+            
+            .video-container iframe {
+                height: 200px;
+            }
+        }
+
+        /* High Contrast Mode */
+        @media (prefers-contrast: high) {
+            :root {
+                --primary-600: #000;
+                --on-surface-variant: #000;
+                --outline: #000;
+            }
+
+            .card {
+                border: 2px solid #000;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-container">
+                <a href="#home" class="nav-logo">
+                    <img src="logo-poltekkes.png" alt="Logo Poltekkes Kemenkes Makassar" class="nav-logo-icon" />
+                    <div class="nav-logo-content">
+                        <div class="nav-logo-title">Poltekkes Kemenkes Makassar</div>
+                        <div class="nav-logo-subtitle">Edukasi Pengolahan Limbah</div>
+                    </div>
+                </a>
+                
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link active" data-section="home">Home</a></li>
+                    <li><a href="#artikel" class="nav-link" data-section="artikel">Artikel</a></li>
+                    <li><a href="#tips" class="nav-link" data-section="tips">Tips</a></li>
+                    <li><a href="#galeri" class="nav-link" data-section="galeri">Galeri</a></li>
+                    <li><a href="#tentang" class="nav-link" data-section="tentang">Tentang</a></li>
+                    <li><a href="#kontak" class="nav-link" data-section="kontak">Kontak</a></li>
+                </ul>
+                
+                <button class="mobile-menu-btn" onclick="toggleMobileMenu()" aria-label="Toggle mobile menu">
+                    <span id="menuIcon">☰</span>
+                </button>
+            </div>
+            
+            <div class="mobile-menu" id="mobileMenu">
+                <a href="#home" class="mobile-nav-link" onclick="closeMobileMenu()">Home</a>
+                <a href="#artikel" class="mobile-nav-link" onclick="closeMobileMenu()">Artikel</a>
+                <a href="#tips" class="mobile-nav-link" onclick="closeMobileMenu()">Tips</a>
+                <a href="#galeri" class="mobile-nav-link" onclick="closeMobileMenu()">Galeri</a>
+                <a href="#tentang" class="mobile-nav-link" onclick="closeMobileMenu()">Tentang</a>
+                <a href="#kontak" class="mobile-nav-link" onclick="closeMobileMenu()">Kontak</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-particles" id="particles"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Kelola Limbah Cair, Selamatkan Bumi</h1>
+            <p class="hero-subtitle">
+                Pelajari cara mengelola limbah cair rumah tangga dengan benar untuk menjaga lingkungan 
+                dan kesehatan keluarga. Mari bersama-sama menciptakan masa depan yang berkelanjutan.
+            </p>
+            <a href="#artikel" class="hero-cta">
+                <span>🚀</span>
+                Pelajari Sekarang
+            </a>
+        </div>
+    </section>
+
+    <!-- Articles Section -->
+    <section id="artikel" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Artikel Utama</h2>
+                <p class="section-subtitle">
+                    Panduan komprehensif pengelolaan limbah cair rumah tangga untuk lingkungan yang berkelanjutan
+                </p>
+            </div>
+            
+            <div class="grid grid-auto">
+                <article class="card" data-aos="fade-up" data-aos-delay="0">
+                    <img src="https://images.unsplash.com/photo-1584464491033-06628f3a6b7b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400" alt="Pengelolaan limbah dapur" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">Limbah Dapur</h3>
+                        <p class="card-description">
+                            Panduan lengkap mengelola limbah cair dari aktivitas memasak dan mencuci peralatan dapur. 
+                            Pelajari teknik filtrasi sederhana dan cara mengurangi dampak lingkungan.
+                        </p>
+                        <a href="#" class="card-link">
+                            Baca Selengkapnya
+                            <span>→</span>
+                        </a>
+                    </div>
+                </article>
+                
+                <article class="card" data-aos="fade-up" data-aos-delay="100">
+                    <img src="https://images.unsplash.com/photo-1540518614846-7eded433c457?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400" alt="Pengelolaan limbah kamar mandi" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">Limbah Kamar Mandi</h3>
+                        <p class="card-description">
+                            Cara mengelola air bekas mandi, mencuci, dan limbah toilet dengan aman dan ramah lingkungan. 
+                            Termasuk sistem biofilter dan pengolahan greywater.
+                        </p>
+                        <a href="#" class="card-link">
+                            Baca Selengkapnya
+                            <span>→</span>
+                        </a>
+                    </div>
+                </article>
+                
+                <article class="card" data-aos="fade-up" data-aos-delay="200">
+                    <img src="https://images.unsplash.com/photo-1582735689369-4fe89db7114c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400" alt="Pengelolaan limbah cuci pakaian" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">Limbah Cuci Pakaian</h3>
+                        <p class="card-description">
+                            Teknik pengolahan air bekas cucian untuk mengurangi dampak deterjen terhadap lingkungan. 
+                            Solusi praktis untuk setiap rumah tangga.
+                        </p>
+                        <a href="#" class="card-link">
+                            Baca Selengkapnya
+                            <span>→</span>
+                        </a>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Solutions Section -->
+            <div class="solutions-container" data-aos="fade-up" data-aos-delay="300">
+                <div class="solutions-content">
+                    <h3>Solusi Untuk Pengelolaan Limbah Cair</h3>
+                    <div class="solutions-list">
+                        <div class="solutions-item">
+                            <div class="solutions-icon">1</div>
+                            <div class="solutions-text">
+                                <strong>Sistem filtrasi sederhana untuk air greywater</strong> - 
+                                Gunakan filter bertingkat dengan pasir, kerikil, dan arang aktif untuk membersihkan air bekas cucian.
+                            </div>
+                        </div>
+                        <div class="solutions-item">
+                            <div class="solutions-icon">2</div>
+                            <div class="solutions-text">
+                                <strong>Bioremediasi menggunakan tanaman air</strong> - 
+                                Manfaatkan tanaman seperti eceng gondok dan kangkung air untuk menyerap polutan secara alami.
+                            </div>
+                        </div>
+                        <div class="solutions-item">
+                            <div class="solutions-icon">3</div>
+                            <div class="solutions-text">
+                                <strong>Penggunaan produk ramah lingkungan</strong> - 
+                                Pilih deterjen dan sabun biodegradable untuk mengurangi dampak negatif terhadap lingkungan.
+                            </div>
+                        </div>
+                        <div class="solutions-item">
+                            <div class="solutions-icon">4</div>
+                            <div class="solutions-text">
+                                <strong>Sistem pengolahan limbah terpadu</strong> - 
+                                Integrasikan berbagai metode pengolahan untuk hasil yang optimal dan berkelanjutan.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="solutions-image" data-aos="fade-left" data-aos-delay="400">
+                    <img src="https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" alt="Sistem pengolahan air limbah">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tips Section -->
+    <section id="tips" class="section bg-surface">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Tips & Edukasi</h2>
+                <p class="section-subtitle">
+                    Kumpulan tips praktis untuk mengelola limbah cair rumah tangga secara efektif dan ramah lingkungan
+                </p>
+            </div>
+            
+            <div class="grid grid-auto">
+                <article class="card" data-aos="fade-up" data-aos-delay="0">
+                    <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=300" alt="Tips hemat air" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">Hemat Air</h3>
+                        <p class="card-description">
+                            Tips menghemat penggunaan air untuk mengurangi limbah cair yang dihasilkan dan mengoptimalkan penggunaan sumber daya air.
+                        </p>
+                    </div>
+                </article>
+                
+                <article class="card" data-aos="fade-up" data-aos-delay="100">
+                    <img src="https://images.unsplash.com/photo-1628177142898-93e36e4e3a50?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=300" alt="Pembersih alami" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">Pembersih Alami</h3>
+                        <p class="card-description">
+                            Gunakan bahan alami seperti cuka, baking soda, dan lemon untuk mengurangi kandungan kimia dalam limbah cair rumah tangga.
+                        </p>
+                    </div>
+                </article>
+                
+                <article class="card" data-aos="fade-up" data-aos-delay="200">
+                    <img src="https://images.unsplash.com/photo-1604709177225-055f99402ea3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=300" alt="Daur ulang air" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">Daur Ulang Air</h3>
+                        <p class="card-description">
+                            Manfaatkan kembali air bekas untuk penyiraman tanaman dan keperluan lain yang tidak memerlukan air bersih.
+                        </p>
+                    </div>
+                </article>
+                
+                <article class="card" data-aos="fade-up" data-aos-delay="300">
+                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=300" alt="Perawatan septitank" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">Perawatan Septitank</h3>
+                        <p class="card-description">
+                            Panduan merawat sistem pengolahan limbah rumah tangga dengan benar untuk menjaga efektivitas dan mencegah pencemaran.
+                        </p>
+                    </div>
+                </article>
+                
+                <article class="card" data-aos="fade-up" data-aos-delay="400">
+                    <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=300" alt="Buang minyak bekas" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">Buang Minyak Bekas</h3>
+                        <p class="card-description">
+                            Cara membuang minyak goreng bekas tanpa mencemari saluran air dan merusak sistem pengolahan limbah.
+                        </p>
+                    </div>
+                </article>
+                
+                <article class="card" data-aos="fade-up" data-aos-delay="500">
+                    <img src="https://images.unsplash.com/photo-1576086213369-97a306d36557?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=300" alt="Uji kualitas air" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">Uji Kualitas Air</h3>
+                        <p class="card-description">
+                            Cara mengecek kualitas air limbah sebelum dibuang ke lingkungan untuk memastikan tidak mencemari ekosistem.
+                        </p>
+                    </div>
+                </article>
+            </div>
+            
+            <!-- Video Tutorial Section -->
+            <div class="video-section" data-aos="fade-up" data-aos-delay="600">
+                <h3 class="video-title">Video Edukasi</h3>
+                <p class="video-description">
+                    Tonton video tutorial lengkap tentang proses pengolahan limbah cair rumah tangga 
+                    untuk pemahaman yang lebih mendalam dan praktis.
+                </p>
+                <div class="video-container">
+                    <iframe 
+                        src="https://www.youtube.com/embed/6OMgtbP18sk?si=0K6vXFUVyx1q78Jz" 
+                        title="Proses Pengolahan Limbah Cair Rumah Tangga" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <a href="https://youtu.be/6OMgtbP18sk?si=0K6vXFUVyx1q78Jz" 
+                   target="_blank" 
+                   rel="noopener noreferrer" 
+                   class="video-link">
+                    <span>📺</span>
+                    Tonton di YouTube
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Infographic Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Sistem Pengolahan Limbah Cair Rumah Tangga</h2>
+                <p class="section-subtitle">
+                    Proses tahap demi tahap pengolahan limbah cair untuk hasil yang optimal dan ramah lingkungan
+                </p>
+            </div>
+            
+            <div class="infographic-container" data-aos="fade-up">
+                <h3 class="infographic-title">Proses TPS-3R (Tempat Pengolahan Sampah - Reduce, Reuse, Recycle)</h3>
+                <div class="process-steps">
+                    <div class="process-step" data-aos="zoom-in" data-aos-delay="0">
+                        <div class="process-icon">🏠</div>
+                        <h4 class="process-title">Sumber Limbah</h4>
+                        <p class="process-description">Dapur, kamar mandi, tempat cuci</p>
+                    </div>
+                    
+                    <div class="process-step" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="process-icon">🔽</div>
+                        <h4 class="process-title">Penyaringan</h4>
+                        <p class="process-description">Filter kasar dan halus untuk memisahkan kotoran</p>
+                    </div>
+                    
+                    <div class="process-step" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="process-icon">🌱</div>
+                        <h4 class="process-title">Biofilter</h4>
+                        <p class="process-description">Pengolahan biologis dengan mikroorganisme</p>
+                    </div>
+                    
+                    <div class="process-step" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="process-icon">♻️</div>
+                        <h4 class="process-title">Daur Ulang</h4>
+                        <p class="process-description">Air bersih untuk penyiraman dan kebutuhan lain</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="galeri" class="section bg-surface">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Galeri</h2>
+                <p class="section-subtitle">
+                    Dokumentasi visual berbagai sistem dan teknologi pengelolaan limbah cair rumah tangga
+                </p>
+            </div>
+            
+            <div class="gallery-grid">
+                <!-- Hapus dua item galeri yang error -->
+                <!--
+                <div class="gallery-item" data-aos="fade-up" data-aos-delay="0" onclick="openModal(this)">
+                    <img src="https://images.unsplash.com/photo-1473729470244-3b045e3b9b8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400" alt="Constructed wetland untuk pengolahan air limbah">
+                    <div class="gallery-overlay">
+                        <span>Constructed Wetland System</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-aos="fade-up" data-aos-delay="200" onclick="openModal(this)">
+                    <img src="https://images.unsplash.com/photo-1569163139394-de4e4f43e4e3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400" alt="Instalasi pengolahan air skala kecil">
+                    <div class="gallery-overlay">
+                        <span>Small Scale Treatment Plant</span>
+                    </div>
+                </div>
+                -->
+                <div class="gallery-item" data-aos="fade-up" data-aos-delay="100" onclick="openModal(this)">
+                    <img src="https://images.unsplash.com/photo-1562095241-8c6714fd4178?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400" alt="Sistem daur ulang greywater rumah tangga">
+                    <div class="gallery-overlay">
+                        <span>Greywater Recycling System</span>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-aos="fade-up" data-aos-delay="300" onclick="openModal(this)">
+                    <img src="https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400" alt="Biogas digester untuk limbah organik">
+                    <div class="gallery-overlay">
+                        <span>Biogas Digester System</span>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-aos="fade-up" data-aos-delay="400" onclick="openModal(this)">
+                    <img src="https://images.unsplash.com/photo-1604709177225-055f99402ea3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400" alt="Sistem pemanenan air hujan">
+                    <div class="gallery-overlay">
+                        <span>Rainwater Harvesting</span>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-aos="fade-up" data-aos-delay="500" onclick="openModal(this)">
+                    <img src="https://images.unsplash.com/photo-1628177142898-93e36e4e3a50?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400" alt="Produk pembersih ramah lingkungan">
+                    <div class="gallery-overlay">
+                        <span>Eco-friendly Cleaning Products</span>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-aos="fade-up" data-aos-delay="600" onclick="openModal(this)">
+                    <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400" alt="Sistem aquaponik untuk pengolahan air">
+                    <div class="gallery-overlay">
+                        <span>Aquaponics Water Treatment</span>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-aos="fade-up" data-aos-delay="700" onclick="openModal(this)">
+                    <img src="https://images.unsplash.com/photo-1547036967-23d11aacaee0?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400" alt="Proyek pengelolaan air komunitas">
+                    <div class="gallery-overlay">
+                        <span>Community Water Management</span>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-aos="fade-up" data-aos-delay="800" onclick="openModal(this)">
+                    <img src="galeri1.jpg" alt="Sistem pengolahan limbah cair dengan tanaman air">
+                    <div class="gallery-overlay">
+                        <span>Sistem Tanaman Air</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-aos="fade-up" data-aos-delay="900" onclick="openModal(this)">
+                    <img src="galeri2.jpg" alt="Sistem filtrasi limbah cair rumah tangga">
+                    <div class="gallery-overlay">
+                        <span>Filtrasi Limbah Cair</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="tentang" class="section">
+        <div class="container">
+            <div class="about-container">
+                <div class="section-header">
+                    <h2 class="section-title">Tentang Website</h2>
+                    <p class="section-subtitle">
+                        Dedicated to sustainable water management and environmental education
+                    </p>
+                </div>
+                
+                <div data-aos="fade-up">
+                    <p class="about-description">
+                        Website ini dibuat sebagai panduan komprehensif untuk pengelolaan limbah cair rumah tangga. 
+                        Kami menyediakan informasi, tips, dan solusi praktis untuk membantu setiap rumah tangga 
+                        mengelola limbah cair secara bertanggung jawab demi kelestarian lingkungan. 
+                        Dengan pendekatan yang mudah dipahami dan diterapkan, kami berharap dapat berkontribusi 
+                        dalam menciptakan kesadaran lingkungan yang lebih baik di masyarakat.
+                    </p>
+                    
+                    <div class="team-box" data-aos="fade-up" data-aos-delay="200">
+                        <h3 class="team-title">Tim Kelompok 6</h3>
+                        <div class="team-grid">
+                            <div class="team-member">1. Elisa Assa'</div>
+                            <div class="team-member">2. Muh. Surya</div>
+                            <div class="team-member">3. Nadia Dwi Iswanto</div>
+                            <div class="team-member">4. Nur Rafiani</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="kontak" class="section bg-surface">
+        <div class="container">
+            <div class="contact-container">
+                <div class="section-header">
+                    <h2 class="section-title">Kontak</h2>
+                    <p class="section-subtitle">
+                        Hubungi kami untuk pertanyaan, saran, atau kerjasama dalam pengelolaan limbah cair rumah tangga
+                    </p>
+                </div>
+                
+                <form class="contact-form" id="contactForm" data-aos="fade-up">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Nama Lengkap</label>
+                            <input type="text" id="name" name="name" class="form-input" placeholder="Masukkan nama lengkap Anda" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" id="email" name="email" class="form-input" placeholder="nama@email.com" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject" class="form-label">Subjek</label>
+                        <input type="text" id="subject" name="subject" class="form-input" placeholder="Subjek pesan Anda" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message" class="form-label">Pesan</label>
+                        <textarea id="message" name="message" class="form-textarea" placeholder="Tulis pesan Anda di sini..." required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn" id="submitBtn">
+                        <span id="submitIcon">📤</span>
+                        <span id="submitText">Kirim Pesan</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <h3 class="footer-title">Kelompok 6 - Pengelolaan Limbah Cair Rumah Tangga</h3>
+                <p class="footer-copyright">
+                    © 2024 Semua hak dilindungi. Dibuat untuk pendidikan lingkungan dan kesadaran masyarakat.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal for Gallery -->
+    <div id="modal" class="modal-backdrop" onclick="closeModal()">
+        <div class="modal" onclick="event.stopPropagation()">
+            <img id="modalImage" src="" alt="">
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast">
+        <span class="toast-icon" id="toastIcon"></span>
+        <span class="toast-message" id="toastMessage"></span>
+    </div>
+
+    <script>
+        // Global variables
+        let isMenuOpen = false;
+        let scrollPosition = 0;
+        let isScrolling = false;
+
+        // Utility Functions
+        function debounce(func, wait) {
+            let timeout;
+            return function executedFunction(...args) {
+                const later = () => {
+                    clearTimeout(timeout);
+                    func(...args);
+                };
+                clearTimeout(timeout);
+                timeout = setTimeout(later, wait);
+            };
+        }
+
+        function throttle(func, limit) {
+            let inThrottle;
+            return function() {
+                const args = arguments;
+                const context = this;
+                if (!inThrottle) {
+                    func.apply(context, args);
+                    inThrottle = true;
+                    setTimeout(() => inThrottle = false, limit);
+                }
+            }
+        }
+
+        // Mobile Menu Functions
+        function toggleMobileMenu() {
+            const mobileMenu = document.getElementById('mobileMenu');
+            const menuIcon = document.getElementById('menuIcon');
+            
+            isMenuOpen = !isMenuOpen;
+            
+            if (isMenuOpen) {
+                mobileMenu.classList.add('active');
+                menuIcon.textContent = '✕';
+                document.body.style.overflow = 'hidden';
+            } else {
+                mobileMenu.classList.remove('active');
+                menuIcon.textContent = '☰';
+                               document.body.style.overflow = '';
+            }
+        }
+
+        function closeMobileMenu() {
+            const mobileMenu = document.getElementById('mobileMenu');
+            const menuIcon = document.getElementById('menuIcon');
+            
+            isMenuOpen = false;
+            mobileMenu.classList.remove('active');
+            menuIcon.textContent = '☰';
+            document.body.style.overflow = '';
+        }
+
+        // Smooth Scrolling
+        function initSmoothScrolling() {
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    
+                    if (target) {
+                        const headerOffset = 80;
+                        const elementPosition = target.getBoundingClientRect().top;
+                        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+                        
+                        window.scrollTo({
+                            top: offsetPosition,
+                            behavior: 'smooth'
+                        });
+                        
+                        // Close mobile menu if open
+                        if (isMenuOpen) {
+                            closeMobileMenu();
+                        }
+                    }
+                });
+            });
+        }
+
+        // Navbar Scroll Effect
+        function initNavbarScroll() {
+            const navbar = document.getElementById('navbar');
+            
+            const handleScroll = throttle(() => {
+                const currentScroll = window.pageYOffset;
+                
+                if (currentScroll > 100) {
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
+                
+                scrollPosition = currentScroll;
+            }, 10);
+            
+            window.addEventListener('scroll', handleScroll);
+        }
+
+        // Active Navigation Link
+        function initActiveNavigation() {
+            const sections = document.querySelectorAll('section[id]');
+            const navLinks = document.querySelectorAll('.nav-link[data-section]');
+            
+            const handleScroll = throttle(() => {
+                let current = '';
+                
+                sections.forEach(section => {
+                    const sectionTop = section.getBoundingClientRect().top;
+                    const sectionHeight = section.offsetHeight;
+                    
+                    if (sectionTop <= 150 && sectionTop + sectionHeight > 150) {
+                        current = section.getAttribute('id');
+                    }
+                });
+                
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('data-section') === current) {
+                        link.classList.add('active');
+                    }
+                });
+            }, 100);
+            
+            window.addEventListener('scroll', handleScroll);
+        }
+
+        // Particle Animation
+        function createParticles() {
+            const particlesContainer = document.getElementById('particles');
+            const numberOfParticles = 50;
+            
+            for (let i = 0; i < numberOfParticles; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.animationDelay = Math.random() * 6 + 's';
+                particle.style.animationDuration = (Math.random() * 3 + 3) + 's';
+                particlesContainer.appendChild(particle);
+            }
+        }
+
+        // Toast Notification
+        function showToast(message, type = 'success', duration = 3000) {
+            const toast = document.getElementById('toast');
+            const toastIcon = document.getElementById('toastIcon');
+            const toastMessage = document.getElementById('toastMessage');
+            
+            // Set content
+            toastMessage.textContent = message;
+            
+            // Set icon and class based on type
+            toast.className = 'toast';
+            switch(type) {
+                case 'success':
+                    toastIcon.textContent = '✅';
+                    toast.classList.add('success');
+                    break;
+                case 'error':
+                    toastIcon.textContent = '❌';
+                    toast.classList.add('error');
+                    break;
+                case 'info':
+                    toastIcon.textContent = 'ℹ️';
+                    break;
+                default:
+                    toastIcon.textContent = '✅';
+            }
+            
+            // Show toast
+            toast.classList.add('show');
+            
+            // Auto hide
+            setTimeout(() => {
+                toast.classList.remove('show');
+            }, duration);
+        }
+
+        // Contact Form
+        function initContactForm() {
+            const form = document.getElementById('contactForm');
+            const submitBtn = document.getElementById('submitBtn');
+            const submitIcon = document.getElementById('submitIcon');
+            const submitText = document.getElementById('submitText');
+            
+            form.addEventListener('submit', async function(e) {
+                e.preventDefault();
+                
+                // Get form data
+                const formData = new FormData(form);
+                const data = {
+                    name: formData.get('name'),
+                    email: formData.get('email'),
+                    subject: formData.get('subject'),
+                    message: formData.get('message')
+                };
+                
+                // Validate data
+                if (!data.name || !data.email || !data.subject || !data.message) {
+                    showToast('Semua field harus diisi!', 'error');
+                    return;
+                }
+                
+                // Email validation
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!emailRegex.test(data.email)) {
+                    showToast('Format email tidak valid!', 'error');
+                    return;
+                }
+                
+                // Show loading state
+                submitBtn.disabled = true;
+                submitIcon.innerHTML = '<div class="spinner"></div>';
+                submitText.textContent = 'Mengirim...';
+                
+                try {
+                    // Simulate API call
+                    await new Promise(resolve => setTimeout(resolve, 2000));
+                    
+                    // Success
+                    showToast('Pesan berhasil dikirim! Terima kasih atas partisipasi Anda.', 'success', 4000);
+                    form.reset();
+                    
+                    // Log data (in real app, send to server)
+                    console.log('Form Data:', data);
+                    
+                } catch (error) {
+                    showToast('Terjadi kesalahan. Silakan coba lagi.', 'error');
+                    console.error('Form submission error:', error);
+                } finally {
+                    // Reset button
+                    submitBtn.disabled = false;
+                    submitIcon.textContent = '📤';
+                    submitText.textContent = 'Kirim Pesan';
+                }
+            });
+        }
+
+        // Gallery Modal
+        function openModal(element) {
+            const modal = document.getElementById('modal');
+            const modalImage = document.getElementById('modalImage');
+            const img = element.querySelector('img');
+            
+            modalImage.src = img.src;
+            modalImage.alt = img.alt;
+            modal.classList.add('show');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('modal');
+            modal.classList.remove('show');
+            document.body.style.overflow = '';
+        }
+
+        // Escape key to close modal
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeModal();
+                if (isMenuOpen) {
+                    closeMobileMenu();
+                }
+            }
+        });
+
+        // Scroll Animations (Simple AOS-like functionality)
+        function initScrollAnimations() {
+            const elements = document.querySelectorAll('[data-aos]');
+            
+            const animateOnScroll = throttle(() => {
+                elements.forEach(element => {
+                    const elementTop = element.getBoundingClientRect().top;
+                    const elementVisible = 150;
+                    
+                    if (elementTop < window.innerHeight - elementVisible) {
+                        element.style.opacity = '1';
+                        element.style.transform = 'translateY(0)';
+                    }
+                });
+            }, 50);
+            
+            // Set initial styles
+            elements.forEach(element => {
+                element.style.opacity = '0';
+                element.style.transform = 'translateY(30px)';
+                element.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                
+                const delay = element.getAttribute('data-aos-delay');
+                if (delay) {
+                    element.style.transitionDelay = delay + 'ms';
+                }
+            });
+            
+            window.addEventListener('scroll', animateOnScroll);
+            animateOnScroll(); // Initial check
+        }
+
+        // Page Loading Effect
+        function initPageLoading() {
+            // Add loading class to body
+            document.body.classList.add('loading');
+                rootMargin: '0px 0px -50px 0px'
+            };ndow.addEventListener('load', () => {
+                setTimeout(() => {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {t.add('loaded');
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate');
+                    }
+                });
+            }, observerOptions); for better performance
+            tion initIntersectionObserver() {
+            // Observe all cards and sections
+            document.querySelectorAll('.card, .process-step, .solutions-item').forEach(el => {
+                observer.observe(el);-50px 0px'
+            });
+        }   
+            const observer = new IntersectionObserver((entries) => {
+        // Error HandlingorEach(entry => {
+        window.addEventListener('error', function(e) {
+            console.error('JavaScript Error:', e.error);ate');
+            // In production, you might want to send this to a logging service
+        });     });
+            }, observerOptions);
+        // Performance Monitoring
+        function logPerformance() {d sections
+            if ('performance' in window) {rd, .process-step, .solutions-item').forEach(el => {
+                window.addEventListener('load', () => {
+                    setTimeout(() => {
+                        const perfData = performance.timing;
+                        const pageLoadTime = perfData.loadEventEnd - perfData.navigationStart;
+                        console.log(`Page Load Time: ${pageLoadTime}ms`);
+                    }, 0);tener('error', function(e) {
+                });.error('JavaScript Error:', e.error);
+            }/ In production, you might want to send this to a logging service
+        });
+
+        // Initialize everything when DOM is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize all components {
+            initSmoothScrolling();tener('load', () => {
+            initNavbarScroll();() => {
+            initActiveNavigation();ata = performance.timing;
+            initContactForm();pageLoadTime = perfData.loadEventEnd - perfData.navigationStart;
+            initScrollAnimations();(`Page Load Time: ${pageLoadTime}ms`);
+            initIntersectionObserver();
+            initPageLoading();
+            }
+            // Create particles
+            createParticles();
+            nitialize everything when DOM is loaded
+            // Log performancener('DOMContentLoaded', function() {
+            logPerformance(); components
+            initSmoothScrolling();
+            // Welcome message;
+            console.log('%c🏥 Poltekkes Kemenkes Makassar - Pengelolaan Limbah Cair Rumah Tangga', 'color: #10b981; font-size: 16px; font-weight: bold;');
+            console.log('%cWebsite berhasil dimuat! Mari bersama-sama menjaga lingkungan.', 'color: #6b7280; font-size: 14px;');
+            initScrollAnimations();
+            // Show welcome toast after a delay
+            setTimeout(() => {
+                showToast('Selamat datang! Jelajahi panduan lengkap pengelolaan limbah cair.', 'info', 4000);
+            }, 1000); particles
+        }); createParticles();
+            
+        // Service Worker Registration (for PWA features)
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                // In a real application, you would register a service worker here
+                console.log('Service Worker support detected');gelolaan Limbah Cair Rumah Tangga', 'color: #10b981; font-size: 16px; font-weight: bold;');
+            });sole.log('%cWebsite berhasil dimuat! Mari bersama-sama menjaga lingkungan.', 'color: #6b7280; font-size: 14px;');
+        }   
+            // Show welcome toast after a delay
+        // Additional Utility Functions
+        function formatDate(date) {datang! Jelajahi panduan lengkap pengelolaan limbah cair.', 'info', 4000);
+            return new Intl.DateTimeFormat('id-ID', {
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric'stration (for PWA features)
+            }).format(date);in navigator) {
+        }   window.addEventListener('load', () => {
+                // In a real application, you would register a service worker here
+        function getCurrentTime() {e Worker support detected');
+            return new Intl.DateTimeFormat('id-ID', {
+                hour: '2-digit',
+                minute: '2-digit',
+                second: '2-digit'ctions
+            }).format(new Date());{
+        }   return new Intl.DateTimeFormat('id-ID', {
+                year: 'numeric',
+        // Analytics tracking (placeholder)
+        function trackEvent(eventName, eventData = {}) {
+            console.log('Event Tracked:', eventName, eventData);
+            // In production, send to analytics service
+        }
+        function getCurrentTime() {
+        // Track page interactionsmeFormat('id-ID', {
+        document.addEventListener('click', function(e) {
+            if (e.target.matches('.card-link')) {
+                trackEvent('card_click', { 
+                    card: e.target.closest('.card').querySelector('.card-title').textContent 
+                });
+            }
+            nalytics tracking (placeholder)
+            if (e.target.matches('.nav-link')) { = {}) {
+                trackEvent('navigation_click', { me, eventData);
+                    section: e.target.getAttribute('data-section') 
+                });
+            }
+        });Track page interactions
+        document.addEventListener('click', function(e) {
+        // Responsive image loadingcard-link')) {
+        function initLazyLoading() {ck', { 
+            const images = document.querySelectorAll('img[src]');('.card-title').textContent 
+                });
+            const imageObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {{
+                        const img = entry.target;
+                        img.classList.add('loaded');data-section') 
+                        observer.unobserve(img);
+                    }
+                });
+            });
+            esponsive image loading
+            images.forEach(img => {{
+                imageObserver.observe(img);lectorAll('img[src]');
+            });
+        }   const imageObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+        // Initialize lazy loadingtersecting) {
+        initLazyLoading();nst img = entry.target;
+                        img.classList.add('loaded');
+        // Add keyboard navigationnobserve(img);
+        document.addEventListener('keydown', function(e) {
+            // Tab navigation enhancement
+            if (e.key === 'Tab') {
+                document.body.classList.add('keyboard-navigation');
+            }mages.forEach(img => {
+        });     imageObserver.observe(img);
+            });
+        document.addEventListener('mousedown', function() {
+            document.body.classList.remove('keyboard-navigation');
+        });Initialize lazy loading
+        initLazyLoading();
+        // Prevent zoom on double tap (mobile)
+        let lastTouchEnd = 0;ation
+        document.addEventListener('touchend', function (event) {
+            const now = (new Date()).getTime();
+            if (now - lastTouchEnd <= 300) {
+                event.preventDefault();.add('keyboard-navigation');
+            }
+            lastTouchEnd = now;
+        }, false);
+        document.addEventListener('mousedown', function() {
+        // Add CSS class for enhanced animationsoard-navigation');
+        const style = document.createElement('style');
+        style.textContent = `
+            .animate {  on double tap (mobile)
+                animation: fadeInUp 0.6s ease forwards; 
+            }ent.addEventListener('touchend', function (event) {
+            .keyboard-navigation *:focus {me();
+                outline: 2px solid var(--primary-500) !important;
+                outline-offset: 2px !important;
+            }
+            .loading * { = now;
+                animation-play-state: paused !important;
+            }
+        `; Add CSS class for enhanced animations
+        document.head.appendChild(style);ent('style');
+    </script>
+</body>
+</html>
